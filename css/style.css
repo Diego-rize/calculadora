@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px; 
+    width: 100%; 
+}
+
+.pantalla {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: #555;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    min-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #666;
+    color: #fff;
+}
+
+button:hover {
+    background: #777;
+}
+
+button.operador {
+    background: #ff9800;
+}
+
+button.operador:hover {
+    background: #ffa726;
+}
+
+button.igual {
+    background: #4caf50;
+    grid-column: span 2;
+}
+
+button.igual:hover {
+    background: #66bb6a;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #e57373;
+}
